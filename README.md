@@ -6,6 +6,8 @@ The tipicall scenario is to use it just after importing an exchange file when al
 
 Still a work in progress
 
+"Main Form.png"
+
 To be done: Make it faster, the idea is to open the file in background
 
 Binary archive include for those who just want a pre-compiled file
