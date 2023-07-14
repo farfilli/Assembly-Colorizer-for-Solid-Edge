@@ -26,28 +26,6 @@
 
         Colorize(objAsm)
 
-        'For Each tmpOcc As SolidEdgeAssembly.Occurrence In objAsm.Occurrences
-
-        '    'If Not tmpOcc.Subassembly Then
-
-        '    PB.PerformStep()
-
-        '        Dim tmpStyles As SolidEdgeFramework.FaceStyles = objAsm.FaceStyles
-
-        '        Dim r As Integer = 0
-        '        Do Until r <> 0
-        '            r = GetRandom(1, tmpStyles.Count)
-        '            For Each item In Split(SkipTXT.Text, ",")
-        '                If tmpStyles.Item(r).StyleName.ToString.ToUpper.Contains(item.ToUpper) Then r = 0 : Exit For
-        '            Next
-
-        '        Loop
-
-        '        tmpOcc.FaceStyle = tmpStyles.Item(r)
-
-        '    'End If
-        'Next
-
         objApp.DelayCompute = False
 
     End Sub
