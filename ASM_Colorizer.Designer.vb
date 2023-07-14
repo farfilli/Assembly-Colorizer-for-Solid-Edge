@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ASM_Colorizer
     Inherits System.Windows.Forms.Form
 
     'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
@@ -22,8 +22,8 @@ Partial Class Form1
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ASM_Colorizer))
+        Me.BT_Colorize = New System.Windows.Forms.Button()
         Me.SkipTXT = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CB_SubOccurrences = New System.Windows.Forms.CheckBox()
@@ -34,21 +34,21 @@ Partial Class Form1
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'BT_Colorize
         '
-        Me.Button1.Location = New System.Drawing.Point(217, 46)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 40)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Colorize"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BT_Colorize.Location = New System.Drawing.Point(217, 46)
+        Me.BT_Colorize.Margin = New System.Windows.Forms.Padding(2)
+        Me.BT_Colorize.Name = "BT_Colorize"
+        Me.BT_Colorize.Size = New System.Drawing.Size(121, 40)
+        Me.BT_Colorize.TabIndex = 0
+        Me.BT_Colorize.Text = "Colorize"
+        Me.BT_Colorize.UseVisualStyleBackColor = True
         '
         'SkipTXT
         '
         Me.SkipTXT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SkipTXT.Location = New System.Drawing.Point(9, 24)
-        Me.SkipTXT.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SkipTXT.Margin = New System.Windows.Forms.Padding(2)
         Me.SkipTXT.Name = "SkipTXT"
         Me.SkipTXT.Size = New System.Drawing.Size(329, 20)
         Me.SkipTXT.TabIndex = 1
@@ -70,7 +70,7 @@ Partial Class Form1
         Me.CB_SubOccurrences.Checked = True
         Me.CB_SubOccurrences.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CB_SubOccurrences.Location = New System.Drawing.Point(9, 48)
-        Me.CB_SubOccurrences.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CB_SubOccurrences.Margin = New System.Windows.Forms.Padding(2)
         Me.CB_SubOccurrences.Name = "CB_SubOccurrences"
         Me.CB_SubOccurrences.Size = New System.Drawing.Size(150, 17)
         Me.CB_SubOccurrences.TabIndex = 3
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.CB_SameColor.Text = "Same occurrence same color"
         Me.CB_SameColor.UseVisualStyleBackColor = True
         '
-        'Form1
+        'ASM_Colorizer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -121,10 +121,10 @@ Partial Class Form1
         Me.Controls.Add(Me.CB_SubOccurrences)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SkipTXT)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BT_Colorize)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Name = "Form1"
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Name = "ASM_Colorizer"
         Me.Text = "Assembly Colorizer"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
@@ -133,7 +133,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BT_Colorize As Button
     Friend WithEvents SkipTXT As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents CB_SubOccurrences As CheckBox

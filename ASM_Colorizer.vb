@@ -1,9 +1,9 @@
-﻿Public Class Form1
+﻿Public Class ASM_Colorizer
 
     Dim Styles As New List(Of SolidEdgeFramework.FaceStyle)
     Dim StyleDB As New Collection
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BT_Colorize.Click
 
         Styles.Clear()
         StyleDB.Clear()
