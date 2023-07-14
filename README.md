@@ -10,13 +10,13 @@ Still a work in progress
 
 Each FaceStyle Name containing one of the words inserted in the textbox (comma separated) will not be used
 
-**Single FaceStyle SubAssembly:** with this option checked SubAssemblies will be treated as a single occurrence
+**Single FaceStyle SubAssembly:** With this option checked SubAssemblies will be treated as a single occurrence
 
-**Same file same FaceStyle:** with this option checked all the occurrences of the same file will have the same FaceStyle color
+**Same file same FaceStyle:** With this option checked all the occurrences of the same file will have the same FaceStyle color
 
 To be done: Make it faster, the idea is to open the file in the background
 
-Binary archives include for those who just want a pre-compiled file
+Binary archives included for those who just want a pre-compiled file
 
 Contributors are very welcome!
 
