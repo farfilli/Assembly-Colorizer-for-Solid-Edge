@@ -72,9 +72,9 @@ Partial Class ASM_Colorizer
         Me.CB_SubOccurrences.Location = New System.Drawing.Point(9, 48)
         Me.CB_SubOccurrences.Margin = New System.Windows.Forms.Padding(2)
         Me.CB_SubOccurrences.Name = "CB_SubOccurrences"
-        Me.CB_SubOccurrences.Size = New System.Drawing.Size(150, 17)
+        Me.CB_SubOccurrences.Size = New System.Drawing.Size(174, 17)
         Me.CB_SubOccurrences.TabIndex = 3
-        Me.CB_SubOccurrences.Text = "Single color SubAssembly "
+        Me.CB_SubOccurrences.Text = "Single FaceStyle SubAssembly "
         Me.CB_SubOccurrences.UseVisualStyleBackColor = True
         '
         'StatusStrip1
@@ -106,9 +106,9 @@ Partial Class ASM_Colorizer
         Me.CB_SameColor.Location = New System.Drawing.Point(9, 69)
         Me.CB_SameColor.Margin = New System.Windows.Forms.Padding(2)
         Me.CB_SameColor.Name = "CB_SameColor"
-        Me.CB_SameColor.Size = New System.Drawing.Size(164, 17)
+        Me.CB_SameColor.Size = New System.Drawing.Size(147, 17)
         Me.CB_SameColor.TabIndex = 3
-        Me.CB_SameColor.Text = "Same occurrence same color"
+        Me.CB_SameColor.Text = "Same file same FaceStyle"
         Me.CB_SameColor.UseVisualStyleBackColor = True
         '
         'ASM_Colorizer
