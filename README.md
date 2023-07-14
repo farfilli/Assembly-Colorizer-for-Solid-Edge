@@ -1,16 +1,20 @@
 # Assembly Colorizer for Solid Edge
 
 From a request made during Realize Live 2023 the idea to create this program.
-The needings is a fast way to assign a random color to the occurrences of an assembly.
-The tipicall scenario is to use it just after importing an exchange file when all the occurrence have the same gray color.
+The needings are a fast way to assign a random FaceStyle color to the occurrences of an assembly.
+The typical scenario is to use it just after importing an exchange file when all the occurrences have the same gray color.
 
 Still a work in progress
 
-"Main Form.png"
+<img src="Main Form.png">
 
-To be done: Make it faster, the idea is to open the file in background
+Each FaceStyle Name containing one of the words inserted in the textbox (comma separated) will not be used
+Single color SubAssembly: with this option checked SubAssemblies will be treated as a single occurrence
+Same file same color: with this option checked all the occurrences of the same file will have the same FaceStyle color
 
-Binary archive include for those who just want a pre-compiled file
+To be done: Make it faster, the idea is to open the file in the background
+
+Binary archives include for those who just want a pre-compiled file
 
 Contributors are very welcome!
 
