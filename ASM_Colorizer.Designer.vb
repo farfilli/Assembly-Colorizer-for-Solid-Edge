@@ -96,7 +96,7 @@ Partial Class ASM_Colorizer
         'PB
         '
         Me.PB.Name = "PB"
-        Me.PB.Size = New System.Drawing.Size(75, 16)
+        Me.PB.Size = New System.Drawing.Size(150, 16)
         '
         'CB_SameColor
         '
@@ -122,8 +122,10 @@ Partial Class ASM_Colorizer
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.SkipTXT)
         Me.Controls.Add(Me.BT_Colorize)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.MaximizeBox = False
         Me.Name = "ASM_Colorizer"
         Me.Text = "Assembly Colorizer"
         Me.StatusStrip1.ResumeLayout(False)

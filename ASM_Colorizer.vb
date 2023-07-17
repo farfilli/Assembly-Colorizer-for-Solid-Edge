@@ -98,7 +98,7 @@
         Dim n As SolidEdgeFramework.FaceStyle = Styles.Item(r)
 
         Styles.RemoveAt(r)
-        StyleDB.Add(n, Name)
+        If CB_SameColor.Checked Then StyleDB.Add(n, Name)
 
         Return n
 
