@@ -3,7 +3,7 @@
     Dim Styles As New List(Of SolidEdgeFramework.FaceStyle)
     Dim StyleDB As New Collection
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BT_Colorize.Click
+    Private Sub BT_Colorize_Click(sender As Object, e As EventArgs) Handles BT_Colorize.Click
 
         Styles.Clear()
         StyleDB.Clear()
