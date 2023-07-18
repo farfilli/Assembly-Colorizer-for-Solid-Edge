@@ -16,6 +16,8 @@ Each FaceStyle Name containing one of the words inserted in the textbox (comma s
 
 **Fast Mode (Process in background):** With this option checked the assembly is closed and opened in background, processed, and reopened. This is very fast, recommended for large assemblies
 
+If nothing is selected the whole assembly will be colorized; if there is a selection only the selected occurrences will be colorized. Fast mode will always colorize the whole assembly.
+
 Binary archives included for those who just want a pre-compiled file
 
 Contributors are very welcome!
