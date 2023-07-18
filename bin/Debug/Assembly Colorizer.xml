@@ -22,5 +22,10 @@ Assembly Colorizer
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Assembly_Colorizer.My.Resources.Resources.icons8_background_remover_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

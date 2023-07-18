@@ -5,6 +5,8 @@
 
     Private Sub BT_Colorize_Click(sender As Object, e As EventArgs) Handles BT_Colorize.Click
 
+        Me.Cursor = Cursors.WaitCursor
+
         Styles.Clear()
         StyleDB.Clear()
 
@@ -19,6 +21,16 @@
             End
         End Try
 
+        Dim tmpName As String = objAsm.FullName
+
+        If CheckBackground.Checked Then
+
+            objAsm.Close(True)
+            objAsm = SolidEdgeCommunity.Extensions.DocumentsExtensions.OpenInBackground(Of SolidEdgeAssembly.AssemblyDocument)(objApp.Documents, tmpName)
+
+        End If
+
+        PB.Value = 0
         PB.Maximum = objAsm.Occurrences.Count
         PB.Step = 1
 
@@ -27,6 +39,15 @@
         Colorize(objAsm)
 
         objApp.DelayCompute = False
+
+        If CheckBackground.Checked Then
+
+            objAsm.Close(True)
+            objApp.Documents.Open(tmpName)
+
+        End If
+
+        Me.Cursor = Cursors.Default
 
     End Sub
 

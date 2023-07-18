@@ -27,19 +27,17 @@ Partial Class ASM_Colorizer
         Me.SkipTXT = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CB_SubOccurrences = New System.Windows.Forms.CheckBox()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.PB = New System.Windows.Forms.ToolStripProgressBar()
         Me.CB_SameColor = New System.Windows.Forms.CheckBox()
-        Me.StatusStrip1.SuspendLayout()
+        Me.PB = New System.Windows.Forms.ProgressBar()
+        Me.CheckBackground = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'BT_Colorize
         '
-        Me.BT_Colorize.Location = New System.Drawing.Point(217, 46)
+        Me.BT_Colorize.Location = New System.Drawing.Point(217, 48)
         Me.BT_Colorize.Margin = New System.Windows.Forms.Padding(2)
         Me.BT_Colorize.Name = "BT_Colorize"
-        Me.BT_Colorize.Size = New System.Drawing.Size(121, 40)
+        Me.BT_Colorize.Size = New System.Drawing.Size(121, 60)
         Me.BT_Colorize.TabIndex = 0
         Me.BT_Colorize.Text = "Colorize"
         Me.BT_Colorize.UseVisualStyleBackColor = True
@@ -77,27 +75,6 @@ Partial Class ASM_Colorizer
         Me.CB_SubOccurrences.Text = "Single FaceStyle SubAssembly "
         Me.CB_SubOccurrences.UseVisualStyleBackColor = True
         '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.PB})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 92)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(346, 22)
-        Me.StatusStrip1.TabIndex = 4
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'ToolStripStatusLabel1
-        '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(0, 17)
-        '
-        'PB
-        '
-        Me.PB.Name = "PB"
-        Me.PB.Size = New System.Drawing.Size(150, 16)
-        '
         'CB_SameColor
         '
         Me.CB_SameColor.AutoSize = True
@@ -111,12 +88,32 @@ Partial Class ASM_Colorizer
         Me.CB_SameColor.Text = "Same file same FaceStyle"
         Me.CB_SameColor.UseVisualStyleBackColor = True
         '
+        'PB
+        '
+        Me.PB.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PB.Location = New System.Drawing.Point(0, 111)
+        Me.PB.Margin = New System.Windows.Forms.Padding(0)
+        Me.PB.Name = "PB"
+        Me.PB.Size = New System.Drawing.Size(346, 22)
+        Me.PB.TabIndex = 4
+        '
+        'CheckBackground
+        '
+        Me.CheckBackground.AutoSize = True
+        Me.CheckBackground.Location = New System.Drawing.Point(9, 91)
+        Me.CheckBackground.Name = "CheckBackground"
+        Me.CheckBackground.Size = New System.Drawing.Size(193, 17)
+        Me.CheckBackground.TabIndex = 5
+        Me.CheckBackground.Text = "Fast mode (Process in background)"
+        Me.CheckBackground.UseVisualStyleBackColor = True
+        '
         'ASM_Colorizer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(346, 114)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.ClientSize = New System.Drawing.Size(346, 133)
+        Me.Controls.Add(Me.CheckBackground)
+        Me.Controls.Add(Me.PB)
         Me.Controls.Add(Me.CB_SameColor)
         Me.Controls.Add(Me.CB_SubOccurrences)
         Me.Controls.Add(Me.Label1)
@@ -128,8 +125,7 @@ Partial Class ASM_Colorizer
         Me.MaximizeBox = False
         Me.Name = "ASM_Colorizer"
         Me.Text = "Assembly Colorizer"
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -139,8 +135,7 @@ Partial Class ASM_Colorizer
     Friend WithEvents SkipTXT As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents CB_SubOccurrences As CheckBox
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
-    Friend WithEvents PB As ToolStripProgressBar
     Friend WithEvents CB_SameColor As CheckBox
+    Friend WithEvents PB As ProgressBar
+    Friend WithEvents CheckBackground As CheckBox
 End Class

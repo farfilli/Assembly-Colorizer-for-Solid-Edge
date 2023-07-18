@@ -22,12 +22,6 @@ F:\Sorgenti\Assembly Colorizer\bin\Debug\Assembly Colorizer.pdb
 F:\Sorgenti\Assembly Colorizer\bin\Debug\Assembly Colorizer.xml
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.AssemblyReference.cache
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.SuggestedBindingRedirects.cache
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Interop.SolidEdgeAssembly.dll
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Interop.SolidEdgeFramework.dll
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Interop.SolidEdgeFrameworkSupport.dll
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Interop.SolidEdgeGeometry.dll
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Interop.SolidEdgePart.dll
-F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.ResolveComReference.cache
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly_Colorizer.Resources.resources
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.GenerateResource.cache
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.CoreCompileInputs.cache
@@ -35,3 +29,7 @@ F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.exe
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.xml
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.pdb
 F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly_Colorizer.ASM_Colorizer.resources
+F:\Sorgenti\Assembly Colorizer\bin\Debug\Interop.SolidEdge.dll
+F:\Sorgenti\Assembly Colorizer\bin\Debug\SolidEdge.Community.dll
+F:\Sorgenti\Assembly Colorizer\bin\Debug\SolidEdge.Community.pdb
+F:\Sorgenti\Assembly Colorizer\obj\Debug\Assembly Colorizer.vbproj.CopyComplete
