@@ -58,43 +58,79 @@
 
     Private Sub Colorize(objAsm As SolidEdgeAssembly.AssemblyDocument, Optional SubOcc As SolidEdgeAssembly.SubOccurrences = Nothing)
 
-        If IsNothing(SubOcc) Then
 
-            For Each tmpOcc As SolidEdgeAssembly.Occurrence In objAsm.Occurrences
+        If objAsm.Parent.ActiveSelectSet.Count = 0 Then
 
-                If Not tmpOcc.Subassembly Or CB_SubOccurrences.Checked Then
+            If IsNothing(SubOcc) Then
 
-                    PB.PerformStep()
+                For Each tmpOcc As SolidEdgeAssembly.Occurrence In objAsm.Occurrences
 
-                    tmpOcc.FaceStyle = ChooseStyle(tmpOcc.OccurrenceFileName, objAsm)
+                    If Not tmpOcc.Subassembly Or CB_SubOccurrences.Checked Then
 
-                Else
+                        PB.PerformStep()
 
-                    Colorize(objAsm, tmpOcc.SubOccurrences)
+                        tmpOcc.FaceStyle = ChooseStyle(tmpOcc.OccurrenceFileName, objAsm)
 
-                End If
+                    Else
 
-            Next
+                        Colorize(objAsm, tmpOcc.SubOccurrences)
+
+                    End If
+
+                Next
+
+            Else
+
+                For Each tmpSubOcc As SolidEdgeAssembly.SubOccurrence In SubOcc
+
+                    If Not tmpSubOcc.Subassembly Or CB_SubOccurrences.Checked Then
+
+                        PB.PerformStep()
+
+                        tmpSubOcc.FaceStyle = ChooseStyle(tmpSubOcc.SubOccurrenceFileName, objAsm)
+
+                    Else
+
+                        Colorize(objAsm, tmpSubOcc.SubOccurrences)
+
+                    End If
+
+                Next
+
+            End If
 
         Else
 
-            For Each tmpSubOcc As SolidEdgeAssembly.SubOccurrence In SubOcc
+            PB.Maximum = objAsm.Parent.ActiveSelectSet.Count
 
-                If Not tmpSubOcc.Subassembly Or CB_SubOccurrences.Checked Then
+            For Each item In objAsm.Parent.ActiveSelectSet
 
-                    PB.PerformStep()
+                If item.Type = -1879909117 Or item.Type = -1879909116 Then
 
-                    tmpSubOcc.FaceStyle = ChooseStyle(tmpSubOcc.SubOccurrenceFileName, objAsm)
+                    Dim tmpOcc As SolidEdgeAssembly.Occurrence = item
+                    tmpOcc.FaceStyle = ChooseStyle(tmpOcc.OccurrenceFileName, objAsm)
 
-                Else
+                ElseIf item.type = -768828720 Then
 
-                    Colorize(objAsm, tmpSubOcc.SubOccurrences)
+                    Dim tmpReff As SolidEdgeFramework.Reference = item
+                    Dim tmpOcc As SolidEdgeAssembly.Occurrence = tmpReff.Object
+                    Dim tmpStyle = ChooseStyle(tmpOcc.OccurrenceFileName, objAsm)
+                    item.style = tmpStyle.StyleName
 
                 End If
 
+                PB.PerformStep()
+
             Next
 
+            objAsm.Parent.ActiveSelectSet.RemoveAll()
+
         End If
+
+
+
+
+
 
     End Sub
 
