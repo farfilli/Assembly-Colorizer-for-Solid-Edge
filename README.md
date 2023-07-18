@@ -14,7 +14,7 @@ Each FaceStyle Name containing one of the words inserted in the textbox (comma s
 
 **Same file same FaceStyle:** With this option checked all the occurrences of the same file will have the same FaceStyle color
 
-To be done: Make it faster, the idea is to open the file in the background
+**Fast Mode (Process in background):** With this option checked the assembly is closed and opened in background, processed, and reopened. This is very fast, recommended for large assemblies
 
 Binary archives included for those who just want a pre-compiled file
 
