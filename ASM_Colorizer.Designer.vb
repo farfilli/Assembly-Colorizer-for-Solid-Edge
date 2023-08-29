@@ -124,7 +124,7 @@ Partial Class ASM_Colorizer
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "ASM_Colorizer"
-        Me.Text = "Assembly Colorizer"
+        Me.Text = "Assembly Colorizer v0.1"
         Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
