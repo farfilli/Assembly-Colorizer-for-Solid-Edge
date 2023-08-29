@@ -18,7 +18,7 @@ Each FaceStyle Name containing one of the words inserted in the textbox (comma s
 
 **Selections:** If nothing is selected the whole assembly will be colorized; if there is a selection only the selected occurrences will be colorized. Fast mode will always colorize the whole assembly.
 
-Binary archives included for those who just want a pre-compiled file
+Releases here: https://github.com/farfilli/Assembly-Colorizer-for-Solid-Edge/releases
 
 Contributors are very welcome!
 
